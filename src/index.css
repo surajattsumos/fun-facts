@@ -2,12 +2,85 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
 
 body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header-container {
+  background-color: #1a1818;
+  border-radius: 10px;
+  margin: 5px 10px 0px 10px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-container img {
+  width: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  background-color: #1a1818;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-links li:hover {
+  background-color: #333;
+}
+
+.main-container {
+  flex: 1;
+  border-radius: 10px;
+  background-color: #1a1818;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
+.root-div-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  background-color: #1a1818;
+  border-radius: 10px;
+  margin: 0px 10px 5px 10px;
+  padding: 10px;
+}
+
+.main-container h1 {
+  font-size: 40px;
+  color: #fff;
+  margin: 0px;
+}
+
+.main-container li {
+  font-size: 20px;
+  color: #fff;
+}
+
+.main-container ol {
+  margin: 10px;
   padding: 10px;
 }
