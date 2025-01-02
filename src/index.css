@@ -51,6 +51,10 @@ body {
   flex: 1;
   border-radius: 10px;
   background-color: #1a1818;
+  background-image: url("/src/assets/react-logo-half.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 200px;
   color: #fff;
   margin: 10px;
   padding: 10px;
@@ -75,12 +79,27 @@ body {
   margin: 0px;
 }
 
-.main-container li {
-  font-size: 20px;
-  color: #fff;
+.main-container ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-.main-container ol {
-  margin: 10px;
-  padding: 10px;
+.custom-list {
+  list-style: none;
+}
+
+.custom-list li {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  padding-left: 1em;
+}
+
+.custom-list li::before {
+  content: "•"; /* Unicode for bullet point */
+  color: #61dafb; /* React blue color - change as needed */
+  font-size: 1.5em; /* Makes the bullet larger */
+  position: absolute;
+  left: 0;
+  top: -0.3em; /* Adjust vertical alignment as needed */
 }
